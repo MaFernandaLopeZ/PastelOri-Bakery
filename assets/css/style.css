@@ -37,12 +37,12 @@ section:nth-child(even){
     text-align: center;
     color:var(--pink);
     font-size: 2rem;
-    padding-top: 1rem;
+    padding-top: 6rem;
 }
 
 .heading{
     text-align: center;
-    color:var(--black);
+    color:var(--blue);
     font-size: 3rem;
     padding-bottom: 2rem;
     text-transform: uppercase;
@@ -203,7 +203,6 @@ header .icons #menu-bars{
 .dishes .box-container{
     width: 90%;
     max-width: 700px;
-    /* background: #f3c8db; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:1.5rem;
@@ -212,27 +211,28 @@ header .icons #menu-bars{
 }
 
 .dishes .box-container .box{
-    /* background: #f3c8db; rgb(246,217,227)*/
     background-size: cover;
     background-position: center;
     overflow: hidden;
     text-align: center;
-    border:.1rem solid rgba(0,0,0,.2);
     height: 210px;
     top:0;
     left:0;
     border-radius: 1rem;
     overflow: hidden;
 }
+.dishes .box-container .box:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px -15px rgba(0,0,0,1);
+    z-index: 1;
+}
 
 /* .dishes .box-container .box .bg{ */
 .dishes .box-container .box:nth-child(even) .bg{
     background: rgba(190, 103, 134, 0.4);
-    color: #fff;
 }
 .dishes .box-container .box:nth-child(even) .bg h3{
     color: #fff;
-    /* color: var(--blue); */
 }
 .dishes .box-container .box .bg{
     width: 100%;
@@ -249,9 +249,106 @@ header .icons #menu-bars{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
-    /* color: var(--blue); */
-    /* color: #fff; */
     color: var(--pink);
     font-size: 2.5rem;
+    /* text-shadow: 1px 1px rgb(0, 0, 0), 2px 2px rgb(0, 0, 0); */
+}
+.dishes .box-container .box .bg h3:hover{
+    text-shadow: 1px 1px rgb(0, 0, 0), 2px 2px rgb(0, 0, 0);
+}
+/* porque elegirnos */
+
+.porqueElegirnos .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.porqueElegirnos .row .image{
+    flex:1 1 45rem;
+}
+
+.porqueElegirnos .row .image img{ 
+    width: 80%;
+}
+
+.porqueElegirnos .row .content{
+    flex:1 1 45rem;
+}
+
+.porqueElegirnos .row .content h3{
+    color:var(--blue);
+    font-size: 4rem;
+    padding:.5rem 0;
+}
+
+.porqueElegirnos .row .content p, 
+.group-about .box-container .box .content p,
+.sucursales .box-container .box .content p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    line-height: 2;
+}
+
+/* NOSOTROS Y SUCURSALES -------------------- */
+.tit-about{
+    font-size: 3rem;
+}
+
+.group-about, .sucursales{
+    margin-top: 9rem;
+}
+.group-about .box-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sucursales .box-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.group-about .box-container .box, .sucursales .box-container .box{
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+    top:0;
+    left:0;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.group-about .box-container .box{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.group-about .box-container .box .content .sub-heading{
+    padding-top: 0;
+}
+.group-about .box-container .box .image{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.group-about .box-container .box .image img{
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.sucursales .box-container .box:nth-child(even) .content i{
+    color:var(--pink);
+}
+.sucursales .box-container .box .content i{
+    color:var(--blue);
+    font-size: 10rem;
 }
