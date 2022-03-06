@@ -193,50 +193,65 @@ header .icons #menu-bars{
 
 /* products */
 
-/* .inf-heading{
+.inf-heading{
     text-align: center;
     color:var(--light-color);
     font-size: 2rem;
     padding-bottom: 1rem;
-} */
+}
 
 .dishes .box-container{
+    width: 90%;
+    max-width: 700px;
+    /* background: #f3c8db; */
     display: grid;
-    /* grid-template-columns: repeat(3, minmax(28rem, 1fr)); */
     grid-template-columns: repeat(3, 1fr);
     gap:1.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dishes .box-container .box{
-    /* padding:2.5rem; */
-    /* background:rgb(187, 35, 35); */
-    /* background: #f3c8db; */
-    border-radius: 1rem;
-    /* border:.1rem solid rgba(0,0,0,.2); */
-    box-shadow: var(--box-shadow);
-    position: relative;
+    /* background: #f3c8db; rgb(246,217,227)*/
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
     text-align: center;
+    border:.1rem solid rgba(0,0,0,.2);
+    height: 210px;
+    top:0;
+    left:0;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
-/* .dishes .box-container .box img{
-    height:17rem;
-    margin:1rem 0;
-} */
-
-.dishes .box-container .box h3{
-    color:var(--blue);
+/* .dishes .box-container .box .bg{ */
+.dishes .box-container .box:nth-child(even) .bg{
+    background: rgba(190, 103, 134, 0.4);
+    color: #fff;
+}
+.dishes .box-container .box:nth-child(even) .bg h3{
+    color: #fff;
+    /* color: var(--blue); */
+}
+.dishes .box-container .box .bg{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(193,242,236,0.4);
+}
+.dishes .box-container .box .bg h3{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    /* color: var(--blue); */
+    /* color: #fff; */
+    color: var(--pink);
     font-size: 2.5rem;
-}
-/* .box .box-1{
-    background-image: url("assets/img/p1.png");
-} */
-.box2{
-    /* padding: 2.5rem; */
-    /* background: #f3c8db; */
-}
-
-.box2:nth-child(even){
-    /* background: var(--spink); */
-    background: #c2f3ed;
 }
