@@ -93,3 +93,13 @@ header .icons a:hover{
 header .icons #menu-bars{
     display: none;
 }
+
+/* ORDENAR */
+.ordenar .box-container{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ordenar{
+    margin-top: 80px;
+}
