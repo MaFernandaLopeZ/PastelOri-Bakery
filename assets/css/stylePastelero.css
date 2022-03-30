@@ -67,8 +67,7 @@ header .navbar a:hover{
     background: var(--pink);
 }
 
-header .icons i,
-header .icons a{
+header .icons i, header .icons a{
     cursor: pointer;
     margin-left: .5rem;
     height:4.5rem;
